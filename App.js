@@ -28,8 +28,8 @@ export default function App() {
       value={text}/>
 
       <View style={{ flexDirection:"row" }}>
-      <Button style={{ backgroundColor: 'black' }} onPress={buttonPressed} title="Add" />
-      <Button style={styles.button} onPress={clear} title="Clear" />
+      <Button onPress={buttonPressed} title="Add" />
+      <Button onPress={clear} title="Clear" />
       </View>
   
       <FlatList style={styles.list}
@@ -59,13 +59,5 @@ const styles = StyleSheet.create({
     borderColor: 'gray',
     borderWidth: 1 
   },
-  button: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingVertical: 12,
-    paddingHorizontal: 32,
-    borderRadius: 4,
-    elevation: 3,
-    backgroundColor: 'black',
-  }
+  
 });
